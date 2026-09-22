@@ -1,0 +1,2 @@
+        @props(['active' => false])
+        <li><a class="{{ $active ? 'bg-gray-200 text-black': '' }} px-2 py-1 cursor-pointer hover:scale-110 hover:text-green-500" {{ $attributes }}>{{ $slot }}</a></li>

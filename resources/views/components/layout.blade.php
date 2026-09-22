@@ -8,10 +8,10 @@
 </head>
 <body class="h-full">
 <nav>
-    <ul class="bg-black text-white flex gap-4 p-2">
-        <li><a class="p-3 cursor-pointer hover:scale-110 hover:text-green-500" href="/">Home</a></li>
-        <li><a class="p-3 cursor-pointer hover:scale-110 hover:text-green-500" href="/about">About</a></li>
-        <li><a class="p-3 cursor-pointer hover:scale-110 hover:text-green-500" href="/contact">Contact</a></li>
+    <ul class="bg-black text-white flex gap-4 p-2 py-6 my-4">
+        <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+        <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
+        <x-nav-link href="/contact" :active="request()->is('contact')">contact</x-nav-link>
     </ul>
 </nav>
     <header>
