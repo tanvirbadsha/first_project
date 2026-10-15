@@ -21,9 +21,24 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
-        \App\Models\Job::create([
+\App\Models\Job::create([
             'title' => 'Frontend Developer',
             'salary' => '75000'
+        ]);
+
+        \App\Models\Job::create([
+            'title' => 'Backend Developer',
+            'salary' => '85000'
+        ]);
+
+        \App\Models\Job::create([
+            'title' => 'Full Stack Engineer',
+            'salary' => '95000'
+        ]);
+
+        \App\Models\Job::create([
+            'title' => 'UI/UX Designer',
+            'salary' => '70000'
         ]);
     }
 }
