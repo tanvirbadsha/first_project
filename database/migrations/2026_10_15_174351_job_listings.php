@@ -13,9 +13,10 @@ return new class extends Migration
     {
         //
             Schema::create('job_listings', function(Blueprint $table){
-            $table->id()->unique();
+            $table->id();
             $table->string('title');
             $table->string('salary')->nullable();
+            $table->timestamps();
 
         });
     }
